@@ -36,9 +36,13 @@ public class BoyController {
         return this.boyService.getById(id);
     }
     @PutMapping("/update")
-    public boolean update(@RequestBody Boy boy){
+    public boolean update(@RequestBody Boy boy) {
 
         return this.boyService.updateById(boy);
+    }
+    @PostMapping("/add")
+    public boolean add(@RequestBody Boy boy){
+        return this.boyService.save(boy);
     }
 }
 

@@ -21,8 +21,8 @@ import lombok.EqualsAndHashCode;
 
     private static final long serialVersionUID=1L;
 
-      @TableId(value = "Id", type = IdType.AUTO)
-      private Integer Id;
+    @TableId(value = "Id", type = IdType.AUTO)
+    private Integer Id;
 
     @TableField("Name")
     private String Name;
@@ -30,6 +30,8 @@ import lombok.EqualsAndHashCode;
     private String description;
 
     private String phone;
+
+    private String picture;
 
 
 }
